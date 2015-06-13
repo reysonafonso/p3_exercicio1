@@ -1,10 +1,11 @@
 <table border = 1>
+    <th>Código</th>
     <th>Cliente</th>
     <?php
-if (isset($_COOKIE['clientes'])){
-    foreach ($_COOKIE['clientes'] as $cli_nome) {
-        echo "<tr><td>$cli_nome</td>";
+    foreach ($_COOKIE['Clientes'] as $cod=>$nome) {
+        echo "<tr><td>$cod</td>";
+        echo "<td>$nome</td></tr>";
     }
-}
+
 ?>
 </table>
